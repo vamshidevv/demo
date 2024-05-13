@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,6 @@
   align-items: center;
   gap: 25px;
   height: 50vh;
- 
 }
 .icon {
   background-color: white;
@@ -17,8 +16,8 @@
   box-shadow: rgba(11, 11, 46, 0.2) 0px 7px 29px 0px;
   padding: 18px !important;
 }
-.fbicon{
-  font-size:35px !important;
+.fbicon {
+  font-size: 35px !important;
 }
 
 @media (max-width: 768px) {
@@ -33,4 +32,23 @@
     font-size: 20px;
     padding: 8px !important;
   }
+}
+.main-header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+.box1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-right: 20px;
+}
+
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: green;
 }
