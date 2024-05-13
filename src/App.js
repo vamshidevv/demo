@@ -5,8 +5,8 @@ import ProfileInfo from "./Components/ProfileInfo";
 function App() {
   return (
     <>
-      <Demo />
       <ProfileInfo />
+      <Demo />
     </>
   );
 }
