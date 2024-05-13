@@ -1,5 +1,4 @@
-import flag from "../Images/american-flag-chinese-flag-circuit-board-as-technology-background-1-1024x683.jpg";
-import art from "../Images/11168982161662873167.jpg";
+import flag from "../Images/koli.png";
 const Demo = () => {
   return (
     <>
@@ -10,7 +9,7 @@ const Demo = () => {
             <img src={flag} alt="flag" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 box2">
-            <img src={art} alt="art" />
+            <img src={flag} alt="art" />
           </div>
         </div>
       </div>
