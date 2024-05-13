@@ -1,10 +1,11 @@
-import React from "react";
-import video from "../Images/wap_gify_EDRaid1_117797_110535_320.mp4";
+import React, { useRef } from "react";
+import video from "../Images/ezgif-1-d13da8eb06.mp4"
 import profile from "../Images/profile.jpg";
 import CallIcon from "@mui/icons-material/Call";
 
 const ProfileInfo = () => {
     const downloadContact = () => {
+
     const vCardContent = `BEGIN:VCARD
       VERSION:3.0
       FN:SAGAR UMRETHIYA
@@ -21,7 +22,16 @@ const ProfileInfo = () => {
     link.click();
     document.body.removeChild(link);
     window.URL.revokeObjectURL(url);
+    }
 
+  const videoRef = useRef(null);
+
+  const togglePlayPause = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+    } else {
+      videoRef.current.pause();
+    }
   };
 
   return (
@@ -29,7 +39,13 @@ const ProfileInfo = () => {
       <div className="container main-header">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 video-container">
-            <video src={video} autoPlay muted controls></video>
+            <video
+              ref={videoRef}
+              src={video}
+              autoPlay
+              muted
+              onClick={togglePlayPause}
+            ></video>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 profile-container">
             <div className="profile">
@@ -61,6 +77,8 @@ const ProfileInfo = () => {
       </div>
     </>
   );
+    
+
 };
 
 export default ProfileInfo;
