@@ -1,5 +1,4 @@
-import flag from "../Images/images.png";
-import art from "../Images/images.png";
+import flag from "../Images/koli.png";
 const Demo = () => {
   return (
     <>
@@ -10,7 +9,7 @@ const Demo = () => {
             <img src={flag} alt="flag" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 box2">
-            <img src={art} alt="art" className="rounded" />
+            <img src={flag} alt="art" />
           </div>
         </div>
       </div>
