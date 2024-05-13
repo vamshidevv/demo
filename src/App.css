@@ -51,4 +51,112 @@
   height: 200px;
   width: 200px;
   background-color: green;
+  flex-direction: column;
+}
+
+.row {
+  border: 1px solid red;
+  gap: 1rem;
+}
+.box1 {
+  height: 200px;
+  width: 300px;
+  /* background-color: red; */
+  /* margin-right: 20px; */
+}
+.box2 {
+  height: 200px;
+  width: 300px;
+  /* background-color: green; */
+}
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container {
+  width: 280px;
+  height: 400px;
+  border: 1px solid black;
+}
+.video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile-container {
+  width: 280px;
+  height: 400px;
+  border: 1px solid black;
+  /* display: flex; */
+}
+.profile {
+  border: 1px solid green;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image {
+  height: 120px;
+  width: 120px;
+  border: 1px solid yellow;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.save-contact-container {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-contact {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.call-icon {
+  /* border: 1px solid blue; */
+  height: 58px;
+  width: 58px;
+  position: relative;
+  left: 20px;
+  background-color: seagreen;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contact-btn button {
+  width: 100%;
+  height: 90%;
+  border: none;
+  background-color: seagreen;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  /* position: relative; */
+  z-index: -1;
 }
