@@ -3,6 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  height: 15vh;
+}
+.icon {
+  background-color: white;
+  color: navy;
+  box-shadow: rgba(11, 11, 46, 0.2) 0px 7px 29px 0px;
+  padding: 18px !important;
+}
+.fbicon {
+  font-size: 35px !important;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font-size: 20px;
+    /* padding: 5px !important; */
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    font-size: 20px;
+    padding: 8px !important;
+  }
+}
 .main-header {
   display: flex;
   justify-content: space-around;
