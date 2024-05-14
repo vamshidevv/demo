@@ -3,7 +3,6 @@ const Demo = () => {
   return (
     <>
       <div className="container main-header">
-
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 box1">
             <img src={flag} alt="flag" />

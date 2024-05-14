@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
-import video from "../Images/ezgif-1-d13da8eb06.mp4"
+import video from "../Images/ezgif-1-d13da8eb06.mp4";
 import profile from "../Images/profile.jpg";
-import CallIcon from "@mui/icons-material/Call";
-
+import CallIcon from '@mui/icons-material/Call';
 const ProfileInfo = () => {
-    const downloadContact = () => {
-
+  const downloadContact = () => {
     const vCardContent = `BEGIN:VCARD
       VERSION:3.0
       FN:SAGAR UMRETHIYA
@@ -22,7 +20,7 @@ const ProfileInfo = () => {
     link.click();
     document.body.removeChild(link);
     window.URL.revokeObjectURL(url);
-    }
+  };
 
   const videoRef = useRef(null);
 
@@ -58,13 +56,13 @@ const ProfileInfo = () => {
               </div>
             </div>
             <div className="save-contact-container">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a target="_blank" rel="noopener noreferrer">
                 <div className="save-contact">
                   <div className="call-icon">
-                    <CallIcon style={{ fontSize: "2rem" }} onClick={downloadContact} />
+                    <CallIcon
+                      style={{ fontSize: "2rem" }}
+                      onClick={downloadContact}
+                    />
                   </div>
                   <div className="contact-btn">
                     <button onClick={downloadContact}>Save Contact</button>
