@@ -11,27 +11,31 @@ const Icons = () => {
     <>
       <Box className="icons-wrapper">
         <Box className="icon rounded-pill">
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <FacebookIcon className="fbicon" />
           </a>
         </Box>
         <Box className="icon rounded-pill">
-          <a href="https://www.whatsapp.com/">
+          <a href="https://www.whatsapp.com/" target="_blank" rel="noreferrer">
             <WhatsAppIcon className="fbicon" />
           </a>
         </Box>
         <Box className="icon rounded-pill">
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             <InstagramIcon className="fbicon" />
           </a>
         </Box>
         <Box className="icon rounded-pill">
-          <a href="https://www.youtube.com/@koliinfotech">
+          <a
+            href="https://www.youtube.com/@koliinfotech"
+            target="_blank"
+            rel="noreferrer"
+          >
             <YouTubeIcon className="fbicon" />
           </a>
         </Box>
         <Box className="icon rounded-pill">
-          <a href="https://www.linkedin.com/">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
             <LinkedInIcon className="fbicon" />
           </a>
         </Box>

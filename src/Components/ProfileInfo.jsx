@@ -1,12 +1,13 @@
 import React, { useRef } from "react";
 import video from "../Images/ezgif-1-d13da8eb06.mp4";
-import profile from "../Images/profile.jpg";
-import CallIcon from '@mui/icons-material/Call';
+import profile from "../Images/ajay-koli.jpeg";
+import CallIcon from "@mui/icons-material/Call";
+
 const ProfileInfo = () => {
   const downloadContact = () => {
     const vCardContent = `BEGIN:VCARD
       VERSION:3.0
-      FN:SAGAR UMRETHIYA
+      FN:Ajay Koli
       TEL:+1234567890
       END:VCARD`;
 
@@ -15,7 +16,7 @@ const ProfileInfo = () => {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", "contact.vcf");
+    link.setAttribute("download", "Ajay Koli.vcf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -36,7 +37,7 @@ const ProfileInfo = () => {
     <>
       <div className="container main-header">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 video-container">
+          <div className="col-lg-6 	 col-sm-12 video-container">
             <video
               ref={videoRef}
               src={video}
@@ -51,32 +52,28 @@ const ProfileInfo = () => {
                 <img src={profile} alt="" />
               </div>
               <div className="text">
-                <h3>NIHAL</h3>
+                <h3>AJAY</h3>
                 <h3>KOLI</h3>
               </div>
             </div>
             <div className="save-contact-container">
-              <a target="_blank" rel="noopener noreferrer">
-                <div className="save-contact">
-                  <div className="call-icon">
-                    <CallIcon
-                      style={{ fontSize: "2rem" }}
-                      onClick={downloadContact}
-                    />
-                  </div>
-                  <div className="contact-btn">
-                    <button onClick={downloadContact}>Save Contact</button>
-                  </div>
+              <div className="save-contact">
+                <div className="call-icon">
+                  <CallIcon
+                    style={{ fontSize: "2rem", cursor: "pointer" }}
+                    onClick={downloadContact}
+                  />
                 </div>
-              </a>
+                <div className="contact-btn">
+                  <button onClick={downloadContact}>Save Contact</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </>
   );
-    
-
 };
 
 export default ProfileInfo;

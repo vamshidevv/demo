@@ -10,8 +10,7 @@ const Header = () => {
   const handleShow = () => setShow(true);
 
   const refreshData = () => {
-    window.location.reload(true)
-
+    window.location.reload(true);
   };
 
   return (
